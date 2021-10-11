@@ -25,3 +25,7 @@ e.g. https://api.duckduckgo.com/?q=harvard&format=json&pretty=1
 6. the data processing and transformations should be covered by tests
 
 Feel free to clarify the requirements further, if you have any doubts.
+
+### Bonus (Optional)
+
+If you have indicated any DevOps skillsets in your resume, please create a Dockerfile, and deploy the web app onto a free cloud platform, such as Heroku.
