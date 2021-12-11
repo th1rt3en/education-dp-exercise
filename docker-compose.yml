@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  main:
+    image: "education-dp-exercise:latest"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    links:
+      - db:db
+    environment:
+      MONGODB_URL: mongodb://db/university
+
+  db:
+    image: "mongo:5.0"
+    ports:
+      - 27017:27017
